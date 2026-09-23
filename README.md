@@ -36,10 +36,11 @@ nix profile install github:stoic-nihilist/localwp-nix
    ```
 
 2.2 Add to `home.packages` in `home.nix`:
+   ```nix
 	home.packages = with pkgs; [
              inputs.localwp.packages.${pkgs.system}.default
 		];
-
+  ```
 
 3. Rebuild your system:
    ```bash
