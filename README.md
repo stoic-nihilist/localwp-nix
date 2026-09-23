@@ -24,7 +24,7 @@ nix profile install github:kaiguaaaa/localwp-nix
    ```nix
    inputs = {
      nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-     localwp.url = "github:kaiguaaaa/localwp-nix";
+     localwp.url = "github:stoic-nihilist/localwp-nix";
    };
    ```
 
