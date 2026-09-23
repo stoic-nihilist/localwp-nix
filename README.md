@@ -50,6 +50,11 @@ nix profile install github:stoic-nihilist/localwp-nix
    ```bash
    home-manager switch --flake .
    ```
+
+4. Run from terminal:
+   ```bash
+   local
+   ```
 ---
 
 ## ⚠️ Essential NixOS Configuration (Router Mode)
