@@ -10,12 +10,12 @@ It includes all dynamic runtime libraries required by LocalWP and its bundled si
 
 ### Option 1: Run directly without installing
 ```bash
-nix run github:kaiguaaaa/localwp-nix
+nix run github:stoic-nihilist/localwp-nix
 ```
 
 ### Option 2: Install via `nix profile`
 ```bash
-nix profile install github:kaiguaaaa/localwp-nix
+nix profile install github:stoic-nihilist/localwp-nix
 ```
 
 ### Option 3: Add to NixOS Configuration (Flakes)
