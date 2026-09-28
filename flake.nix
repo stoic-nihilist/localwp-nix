@@ -45,6 +45,24 @@
           ];
 
           runScript = "${localwp-unwrapped}/opt/Local/local";
+
+          extraInstallCommands = ''
+            mkdir -p $out/share/applications
+            mkdir -p $out/share/icons/hicolor/512x512/apps
+            cp ${localwp-unwrapped}/usr/share/icons/hicolor/512x512/apps/local.png \
+               $out/share/icons/hicolor/512x512/apps/local.png
+
+            cat > $out/share/applications/local.desktop <<EOF
+            [Desktop Entry]
+            Name=Local
+            Comment=Local WordPress development
+            Exec=$out/bin/local %U
+            Icon=$out/share/icons/hicolor/512x512/apps/local.png
+            Type=Application
+            Categories=Development;
+            Terminal=false
+            EOF
+            '';
         };
 
         default = self.packages.${system}.local;
